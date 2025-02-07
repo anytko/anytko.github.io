@@ -1797,8 +1797,8 @@ input, select, textarea {
 
 		.image.featured {
 			display: block;
-			width: 100%;
-			margin: 0 0 4em 0;
+			width: 100%; 
+			margin: 0 auto 4em auto; 
 		}
 
 		.image.left {
@@ -2188,7 +2188,6 @@ input, select, textarea {
 
 	
 
-
 		#header:before {
 			content: '';
 			display: inline-block;
@@ -2416,7 +2415,7 @@ input, select, textarea {
 	#banner {
 		background: #fff;
 		text-align: center;
-		padding: 4.5em 0 4.5em 0;
+		padding: 4.5em 4.5em 4.5em 4.5em;
 		margin-bottom: 0;
 	}
 
