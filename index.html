@@ -138,17 +138,17 @@
 					<div class="reel">
 
 						<article>
-							<a href="#" class="image featured"><img src="EER_1.png" alt="" /></a>
+							<a href="#" class="image featured" id="popup-trigger-image-1"><img src="EER_1.png" alt="" /></a>
 							<header>
-								<h3><a href="#">Eco-Evolutionary Rarity</a></h3>
+								<h3><a href="#" id="popup-trigger-title-1">Eco-Evolutionary Rarity</a></h3>
 							</header>
 							<p>Examining species rarity from simultaneous geographic, functional trait-based, and phylogenetic perspectives.</p>
 						</article>
 
 						<article>
-							<a href="#" class="image featured"><img src="biodiv_books.png" alt="" style="max-width: 65%; height: auto; display: block; margin: 0 auto;"/></a>
+							<a href="#" class="image featured" id="popup-trigger-image-2"><img src="biodiv_books.png" alt="" style="max-width: 65%; height: auto; display: block; margin: 0 auto;"/></a>
 							<header>
-								<h3><a href="#">Biodiversity Theory</a></h3>
+								<h3><a href="#" id="popup-trigger-title-2">Biodiversity Theory</a></h3>
 							</header>
 							<p>Species rarity as a mediator of biodiversity -- ecosystem function relationships.</p>
 						</article>
@@ -188,6 +188,70 @@
 					</div>
 				</section>
 
+<!-- Popup Modal -->
+<div id="popup" class="popup-modal">
+    <div class="popup-content">
+        <span class="close-btn" id="close-popup">&times;</span>
+        <h2>Coming Soon!</h2>
+        <p>Stay tuned for more information.</p>
+    </div>
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('popup');
+
+// Get the <span> element that closes the modal
+var closeBtn = document.getElementById('close-popup');
+
+// Function to open the modal
+function openModal() {
+    modal.classList.add('show'); // Show the modal
+}
+
+// Function to close the modal
+function closeModal() {
+    modal.classList.remove('show'); // Hide the modal
+}
+
+// Add event listeners for each image and title link
+document.getElementById('popup-trigger-image-1').addEventListener('click', function(event) {
+    event.preventDefault();
+    openModal(); // Open the modal when the first image is clicked
+});
+
+document.getElementById('popup-trigger-title-1').addEventListener('click', function(event) {
+    event.preventDefault();
+    openModal(); // Open the modal when the first title is clicked
+});
+
+document.getElementById('popup-trigger-image-2').addEventListener('click', function(event) {
+    event.preventDefault();
+    openModal(); // Open the modal when the second image is clicked
+});
+
+document.getElementById('popup-trigger-title-2').addEventListener('click', function(event) {
+    event.preventDefault();
+    openModal(); // Open the modal when the second title is clicked
+});
+
+// When the user clicks on <span> (x), close the modal
+closeBtn.addEventListener('click', function() {
+    closeModal(); // Close the modal when the close button is clicked
+});
+
+// When the user clicks anywhere outside the modal, close it
+window.addEventListener('click', function(event) {
+    if (event.target == modal) {
+        closeModal(); // Close the modal if clicked outside
+    }
+});
+
+
+</script>
+				
+
 
 <!-- Contact Form Section -->
 <div class="wrapper style1 contact-section">
@@ -225,7 +289,7 @@
 							<!-- Tweets -->
 								<section class="col-4 col-12-mobile">
 									<header>
-										<h2 class="icon brands fa-twitter circled"><span class="label">Tweets</span></h2>
+										<h2 class="fa-brands fa-bluesky"><span class="label"></span></h2>
 									</header>
 									<ul class="divided">
 										<li>
@@ -255,10 +319,10 @@
 									</ul>
 								</section>
 
-							<!-- Posts -->
+							<!-- News -->
 								<section class="col-4 col-12-mobile">
 									<header>
-										<h2 class="icon solid fa-file circled"><span class="label">Posts</span></h2>
+										<h2 class="fa fa-newspaper circled"><span class="label"></span></h2>
 									</header>
 									<ul class="divided">
 										<li>
@@ -299,26 +363,26 @@
 							<!-- Photos -->
 								<section class="col-4 col-12-mobile">
 									<header>
-										<h2 class="icon solid fa-camera circled"><span class="label">Photos</span></h2>
+										<h2 class="fa solid fa-camera"><span class="label"></span></h2>
 									</header>
 									<div class="row gtr-25">
 										<div class="col-6">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="field_work_1.png" alt="" /></a>
 										</div>
 										<div class="col-6">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="cascades_3.png" alt="" /></a>
 										</div>
 										<div class="col-6">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="Norway.png" alt="" /></a>
 										</div>
 										<div class="col-6">
-											<a href="#" class="image fit"><img src="images/pic13.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="field_work_2.png" alt="" /></a>
 										</div>
 										<div class="col-6">
-											<a href="#" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="seedlings.png" alt="" /></a>
 										</div>
 										<div class="col-6">
-											<a href="#" class="image fit"><img src="images/pic15.jpg" alt="" /></a>
+											<a href="#" class="image fit"><img src="big_bend.png" alt="" /></a>
 										</div>
 									</div>
 								</section>
@@ -328,26 +392,11 @@
 						<div class="row">
 							<div class="col-12">
 
-								<!-- Contact -->
-									<section class="contact">
-										<header>
-											<h3>Nisl turpis nascetur interdum?</h3>
-										</header>
-										<p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus tempor aliquet.</p>
-										<ul class="icons">
-											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-											<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
-											<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-											<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
-										</ul>
-									</section>
 
 								<!-- Copyright -->
 									<div class="copyright">
 										<ul class="menu">
-											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+											<li>&copy; 2025 Alivia Nytko. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 										</ul>
 									</div>
 
@@ -368,6 +417,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://kit.fontawesome.com/62c9bf1fd4.js" crossorigin="anonymous"></script>
 
 	</body>
 </html>
