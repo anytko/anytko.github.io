@@ -3141,3 +3141,31 @@ input, select, textarea {
 					}
 
 	}
+
+
+	.contact-section {
+		background: url("images/teton.png") no-repeat center center/cover;
+		padding: 100px 0;
+		text-align: center;
+		color: white;
+		position: relative;
+		background-attachment: fixed;
+	}
+
+	#contact h2 {
+		color: #fff;
+		font-size: 3em;
+		line-height: 1em;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+		font-weight: bold;
+	}
+
+	#contact p {
+		color: #fff;
+		font-size: 1.5em;
+		line-height: 1em;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	}
+
+
+	
