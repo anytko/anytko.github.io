@@ -3250,7 +3250,8 @@ input, select, textarea {
 }
 
 .button.circular:hover {
-    background-color: #e89a8a; /* Darker color on hover */
+	background-color: #ef8376;
+
 }
 
 
