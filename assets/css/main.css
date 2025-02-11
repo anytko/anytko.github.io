@@ -3263,5 +3263,15 @@ input, select, textarea {
     width: 100%; /* Makes the image fill the container's width */
   }
   
+  .half-image {
+    width: 100%; /* Adjust width as needed */
+    height: 26em; /* Adjust height to control cropping */
+    object-fit: cover; /* Ensures the image covers the area */
+    object-position: top; /* Cuts off the bottom part */
+	margin-bottom: 0;
+	display: block; 
+    margin-bottom: -3em;
+}
+
 
 	
