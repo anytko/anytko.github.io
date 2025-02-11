@@ -3230,6 +3230,38 @@ input, select, textarea {
 }
 
 
+/* Circular button styling */
+.button.circular {
+    display: inline-flex; /* Use flexbox to center the content */
+    justify-content: center; /* Horizontally center the icon */
+    align-items: center; /* Vertically center the icon */
+    width: 5em; /* Set the width (adjust as needed) */
+    height: 5em; /* Set the height (same as width for a perfect circle) */
+    border-radius: 50%; /* Makes the button circular */
+    background-color: #df7366; /* Background color for the button */
+    text-align: center; /* Ensures the content is centered horizontally */
+    padding: 0; /* No extra padding */
+}
 
+/* GitHub icon styling */
+.button.circular i {
+    font-size: 2.5em; /* Size of the GitHub icon (adjust based on the button size) */
+    color: white; /* Icon color */
+}
+
+.button.circular:hover {
+    background-color: #e89a8a; /* Darker color on hover */
+}
+
+
+
+
+
+  #software_resources img{
+    height: 10em; /* Set the height you prefer */
+    object-fit: contain; /* Ensures the image scales to fit without being cut off */
+    width: 100%; /* Makes the image fill the container's width */
+  }
+  
 
 	
