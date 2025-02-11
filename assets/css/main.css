@@ -3225,7 +3225,9 @@ input, select, textarea {
     opacity: 1;
 }
 
-	
+#second-publication {
+    margin-top: 40px; /* Adjust this value as needed */
+}
 
 
 
