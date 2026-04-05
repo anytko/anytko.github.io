@@ -24,22 +24,33 @@
 								<h1><a href="index.html" id="logo">Alivia Nytko</a></h1>
 								<hr />
 								<p style="font-size: 3vw; color: #ffffff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); font-style: italic;">
-									Theoretical Evolutionary Ecology
+									Biodiversity, Macroevolution, and Rarity
 								</p>
 								
 							</header>
 							<footer>
 								<a href="#banner" class="scrolly">
-									<img src="website_photo.png" alt="Start" class="circled-image">
+									<div class="circle-container">
+										<img src="website_photo.png" alt="Start" class="circled-image">
+									</div>
 								</a>
 							</footer>
 							
 							<style>
+								.circle-container {
+									width: 20vw;              /* size of the circle */
+									height: 20vw;
+									border-radius: 50%;       /* makes the container circular */
+									overflow: hidden;         /* hides anything outside the circle */
+									display: inline-block;    /* optional, for layout */
+								}
+							
 								.circled-image {
-									width: 20vw; /* Adjust based on viewport width */
-									height: 20vw; /* Keep it proportional */
-									border-radius: 50%;
-									object-fit: cover;
+									width: 100%;              /* fill container */
+									height: 100%;
+									object-fit: cover;        /* maintain aspect ratio and fill */
+									transform: scale(1.2) translateX(3%); /* zoom and shift */
+									transform-origin: center; /* zoom relative to center of image */
 								}
 							</style>
 						</div>
@@ -62,9 +73,13 @@
 					<header>
 						<h2><strong>About Me</strong></h2>
 						<p style="margin-bottom: 1em;">
-							I am a PhD candidate in the Bailey and <a href="https://brianomeara.info/">O'Meara</a> labs in
-							the Ecology and Evolutionary Biology Department at the University of Tennessee Knoxville. 
-							My research focuses on advancing ecological and evolutionary theory using simultaneous geographic, functional trait-based, and phylogenetic approaches to better understand and protect species rarity and biodiversity. I also develop software tools that apply new conceptual frameworks, analyze large biodiversity datasets, and visualize complex ecological and evolutionary dynamics through space and time.
+							Hello! My name is Alivia Nytko and I am a Ph.D. candidate in the Bailey and <a href="https://brianomeara.info/">O'Meara</a> labs in the Ecology and Evolutionary Biology Department at the University of Tennessee. 
+<br><br>
+							I am an evolutionary ecologist and computational biologist studying geographic, functional trait-based, and phylogenetic dimensions of species rarity. In my dissertation, I have built a general model of discretized rarity, combining rarity dimensions at regional and local scales. I am particularly interested in using this multidimensional framework to understand the evolutionary processes generating rarity through time. 
+<br><br>
+							I enjoy working with a wide variety of study systems from angiosperms to North American birds. I am also passionate about methods development and providing biological software and AI integration tools that apply new conceptual frameworks, analyze large biodiversity datasets, and visualize complex macroecological and evolutionary dynamics through space and time.
+<br><br>
+							When I’m not working on research you can find me reading, painting, or hiking in the Great Smoky Mountains.
 						</p>
 						<h3><strong>Academic Profiles</strong></h3>
 						<p style="text-align: center; font-size: 1.2em;">
@@ -83,53 +98,54 @@
 					</header>
 				</section>
 
-						<!-- Main -->
-							<div class="wrapper style2">
-
-								<article id="main" class="container special">
-									<a href="#" class="image featured"><img src="field_work_3.png" alt="" /></a>
-									<header>
-										<h2><a href="#">Understanding, Predicting, and Conserving Species Rarity under Climate Change: Ecological and Evolutionary Insights</a></h2>
-										<p>
-											To conserve rare biodiversity, we need to understand how species are rare, what this means for their persistence, the ecological and evolutionary drivers of these differences, and the broader consequences of rarity on ecosystem function.										</p>
-									</header>
-									<p>
-										Over 36% of plant species are now considered extremely rare<sup><a href= "https://doi.org/10.1126/sciadv.aaz0414" target="_blank">1</a></sup>. Rare species often 
-										contribute disproportionately to community assembly, species interactions, and ecosystem function 
-										through niche specialization, unique functional traits, and distinct evolutionary histories<sup><a href= "https://doi.org/10.1073/pnas.1815727116" target="_blank">2</a></sup>.
-										To conserve rare biodiversity and the dynamics it supports, we must understand how species are rare, as
-										not all species are rare in the same way. Once we understand the factors important to defining rarity, we need to 
-										identify the ecological (e.g. temperature, precipitation, etc.) and evolutionary (e.g. differential diversification) drivers of rarity through space and time. 
-										Finally, we must identify connections between rarity and the function of communities and ecosystems. 
-										By integrating geographic, functional, and phylogenetic dimensions of rarity at local and regional scales, my research informs 
-										the comprehensive management of rare species, a mechanistic understanding of biodiversity, and 
-										rarity-informed predictions of communities and ecosystems under climate change.
-									</p>
-									<footer>
-										<a href="#research-carousel" class="button">Check Out Research</a>
-									</footer>
-								</article>
-			
-							</div>
+				<div class="wrapper style2">
+					<article id="main" class="container special">
+						<div class="image-collage">
+							<img src="field_work_2.png" alt="">
+							<img src="Norway.png" alt="">
+							<img src="fishing.png" alt="">
+							<img src="scottland.png" alt="">
+						</div>
+					</article>
+				</div>
+				
+				<style>
+				.image-collage {
+					display: grid;
+					grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* adjust 200px as needed */
+					grid-gap: 10px; /* space between images */
+				}
+				
+				.image-collage img {
+					width: 100%;
+					height: 100%; /* keep all images same height */
+					object-fit: cover; /* crop to fit container without distortion */
+					border-radius: 8px; /* optional: rounded corners */
+				}
+				</style>
 
 			<!-- Carousel -->
 				<section id="research-carousel" class="carousel">
+					
 					<div class="reel">
 
 						<article>
-							<a href="#" class="image featured" id="popup-trigger-image-1"><img src="gdr_restrictions.png" alt="" /></a>
+							<a href="gdr.html" class="image featured" 
+							style="display: block; text-align: center; margin-bottom: 10px;">
+							 <img src="gdr_restrictions.png" alt="" style="width: 80%; display: inline-block;" />
+						 </a>
 							<header>
-								<h3><a href="#" id="popup-trigger-title-1">A Global Model of Discretized Rarity</a></h3>
+								<h3><a href="gdr.html">A General Model of Discretized Rarity and the Evolution of Rarity</a></h3>
 							</header>
-							<p>Examining species rarity from simultaneous geographic, functional trait-based, and phylogenetic perspectives at local and regional scales.</p>
+							<p>Defining rarity across geographic, functional, and phylogenetic dimensions at local and regional scales, and using this framework to identify the evolutionary processes generating rarity through time.</p>
 						</article>
 
 						<article>
-							<a href="#" class="image featured" id="popup-trigger-image-2"><img src="range_edges.png" alt="" style="max-width: 65%; height: auto; display: block; margin: 0 auto;"/></a>
+							<a href="no-sidebar.html" class="image featured"><img src="range_edges.png" alt="" style="max-width: 65%; height: auto; display: block; margin: 0 auto;"/></a>
 							<header>
-								<h3><a href="#" id="popup-trigger-title-2">Range Edges and Population Persistence</a></h3>
+								<h3><a href="no-sidebar.html">Temporal Range Dynamics of  Edges</a></h3>
 							</header>
-							<p> Range movement and population dynamics as predictors of persistence and response to climate change.
+							<p> Using heterogenous graph neural networks to categorize temporal shifts in North American tree and bird ranges.
 							</p>
 						</article>
 
